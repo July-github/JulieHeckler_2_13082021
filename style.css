@@ -1,0 +1,284 @@
+/*structure globale de la page*/
+body
+{
+    font-family: 'Raleway', sans-serif;
+}
+#bloc_page
+{
+    margin: 0;
+}
+/*header*/
+header
+{
+    display: flex ;
+    justify-content: space-between;
+    margin-top: 0;
+    position: fixed;
+    top: 0;
+    height: 80px;
+    width: 100%;
+    background-color: white;
+}
+header img
+{
+    height: 30px;
+    width: 70px;
+    padding: 30px 0px 0px 20px;
+}
+nav
+{
+    padding-right: 5%;
+    color: #0065FC;
+}
+header ul
+{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 0;
+    list-style-type: none;
+}
+header li 
+{
+    padding: 30px 20px 0px 20px;
+}
+header a
+{
+    text-decoration: none;
+    font-size: 0.8em;
+}
+header li:hover
+{
+    border-top: solid 1px #0065FC;
+    font-weight: 800;
+}
+header a:visited
+{
+    color: #0065FC;
+}
+/*section des filtres*/
+/*filtre localisation*/
+#recherche
+{
+    color: black;
+    margin: 80px 0px 0px 20px;
+}
+#recherche h1
+{
+    font-size: 1em;
+}
+#recherche p
+{
+    font-size: 0.8em;
+}
+#filtre_localisation
+{
+    display:flex;
+}
+.fa-map-marker-alt
+{
+    background: #F2F2F2;
+    font-size: 0.9em;
+    padding: 10.5px 13px 10.2px 13px;
+    margin-right: -5px;
+    border-radius: 10px 0px 0px 10px;
+}
+#localisation
+{
+    border: solid 0.5px #F2F2F2;
+    padding: 7px 7px 7.3px 7px;
+}
+#rechercher
+{
+    color: white;
+    background-color: #0065FC;
+    padding: 8px 12px 7.2px 12px;
+    margin-left: -3px;
+    border-radius: 0px 10px 10px 0px;
+    border: none;
+}
+#rechercher:hover
+{
+    cursor: pointer;
+}
+/*filtres pré-enregistrés*/
+#filtres
+{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+}
+#filtres span
+{
+    font-size: 0.8em;
+    font-weight: 900;
+    margin-right: 20px;
+}
+.pre_filtre
+{
+    display: flex;
+    width: 200px;
+    height: 30px;
+    justify-content: left;
+    align-items: center;
+    margin-top: 8px;
+}
+.pre_filtre a
+{
+    text-decoration: none;
+    text-align: center;
+    margin: 0;
+    border: solid 1.5px #d3d3d3;
+    border-radius: 20px;
+    padding: 8px 13px 8px 45px;
+    color: black;
+    font-weight: 900;
+}
+.pre_filtre a:hover
+{
+    background-color: #DEEBFF;
+}
+.fa-money-bill-wave, .fa-child, .fa-heart, .fa-dog
+{
+    position: absolute;
+    margin: 0;
+    background-color: #DEEBFF;
+    text-align: center;
+    padding: 11px;
+    border-radius: 25px;
+    color: #0065FC;
+    font-size: 0.8em;
+    height: 12px;
+    width: 12px;
+}
+#search_info
+{
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    align-items: center;
+}
+.fa-info-circle
+{
+    margin-right: 10px;
+    color: white;
+    background-color: #0065FC;
+    border: solid #d3d3d3 1px;
+    border-radius: 20px;
+    font-size: 1em;
+}
+/*section hébergements*/
+#section_hebergements
+{
+    display: flex;
+}
+#section_hebergements h2
+{
+    font-size: 1em;
+    margin-top: 5px;
+}
+#cartes_hebergements
+{
+    flex: 2;
+}
+aside
+{
+    flex: 1;
+}
+.fa-star.blue
+{
+    color: #0065FC;
+}
+.fa-star
+{
+    color: gray;
+}
+.stars
+{
+    padding: 0px 0px 4px 6px;
+}
+/*cartes d'hébergements pricipaux*/
+#cartes_hebergements
+{
+    display: flex;
+    flex-direction: column;
+    background-color: #F2F2F2;
+    padding: 15px;
+    border-radius: 15px;
+    margin-right: 25px;
+}
+#cartes
+{
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+}
+.infocarte_hebergement
+{
+    display: flex;
+    align-items: middle;
+    background-color: white;
+    border-radius: 15px;
+    padding: 4px;
+    margin: 10px;
+}
+.infocarte_hebergement img
+{
+    height: 75px;
+    width: 150px;
+    border-radius: 15px 15px 0px 0px;
+}
+.infocarte_hebergement a
+{
+    text-decoration: none;
+    color: black;
+    font-size: 0.6em;
+}
+.infocarte_hebergement p
+{
+    padding: 0px 0px 0px 6px;
+}
+.infocarte_hebergement h3
+{
+    padding: 0px 0px 0px 6px;
+    font-weight: 900;
+}
+/*cartes les plus populaires*/
+aside
+{
+    display: flex;
+    flex-direction: column;
+    background-color: #F2F2F2;
+    padding: 25px;
+    border-radius: 15px;
+    margin-right: 25px;
+}
+#titre_aside
+{
+    display: flex;
+    justify-content: space-between;
+}
+.carte_aside
+{
+    background-color: white;
+    border-radius: 15px;
+    padding: 4px;
+    margin: 10px;
+}
+.carte_aside img
+{
+    height: 80px;
+    width: 80px;
+    border-radius: 15px 0px 0px 15px;
+}
+.carte_aside a
+{
+    text-decoration: none;
+    color: black;
+    font-size: 0.6em;
+}
+
+/*footer*/
