@@ -6,102 +6,125 @@ body
 }
 #bloc_page
 {
-    margin: 0;
+    margin: 0 30px;
     width: auto;
+}
+/*responsive mobile*/
+@media all and (max-width: 667px)
+{
+#bloc_page
+{
+    margin: 0;
+}
 }
 /*header*/
 header
 {
     display: flex;
-    position: fixed;
-    z-index: 1;
-    justify-content: space-between;
-    margin-top: 0;
-    top: 0;
-    height: 80px;
+    justify-content: flex-end;
+    align-items: center;
     width: 100%;
     background-color: white;
+    color: black;
+    font-size: 1em;
+    height: 120px;
 }
 header img
 {
-    height: 35px;
-    width: 80px;
-    padding: 25px 0px 0px 20px;
-}
-nav
-{
-    padding-right: 5%;
-}
-header ul
-{
-    display: flex;
-    justify-content: flex-end;
-    margin-top: 0;
-    list-style-type: none;
+    height: 50px;
+    width: 100px;
 }
 #menu
 {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
+    width: 240px;
+    margin-right: 60px;
+    align-items: center;
 }
-header li 
+nav
 {
-    padding: 30px 20px 0px 20px;
-    color: black;
-    font-size: 0.8em;
+    display: flex;
+    margin-left: auto;
+}
+.lien_menu
+{
+    height: 99%;
+    padding-top: 50px;
 }
 header a
 {
     text-decoration: none;
 }
-header li:hover
+.lien_menu:hover
 {
     border-top: solid 1px #0065FC;
     color: #0065FC;
 }
 #inscription
 {
+    display: flex;
     color: #0065FC;
+    font-weight: 600;
+    padding-right: 5%;
+    list-style-type: none;
+}
+#inscription:hover
+{
     font-weight: 800;
 }
 /*responsive mobile*/
 @media all and (max-width: 667px)
 {
-header
+nav
 {
-    position: unset;
-    height: 60px;
-    flex-direction: column;
-    width: auto;
-}
-#menu
-{
-    
-}
-header ul
-{
-    flex-direction: column-reverse;
-    align-items: center;
+    position: absolute;
+    top: 70px;
+    width: 100%;
 }
 #inscription
 {
-    display: flex;
-    justify-content:flex-end;
+    width: 75%;
+}
+#inscription
+{
+    justify-content: flex-end;
+}
+header img 
+{
+    padding-left: 15px;
+}
+#menu
+{
+    width: 100%;
+    margin-top: 10px;
+    margin-right: 0;
+}
+.lien_menu
+{
+    height: 50%;
+    width: 50%;
+    text-align: center;
+}
+.lien_menu:hover 
+{
+    border-bottom: solid 1px #0065FC;
+    border-top: none;
 }
 }
 /*section des filtres*/
 /*filtre localisation*/
-#recherche
+#section_recherche
 {
     color: black;
-    margin: 80px 0px 0px 20px;
+    margin: 20px 0px 0px 0px;
 }
-#recherche h1
+#section_recherche h1
 {
-    font-size: 1em;
+    font-size: 1.3em;
     font-weight: 600;
 }
-#recherche p
+#section_recherche p
 {
     font-size: 0.8em;
     margin-bottom: 15px;
@@ -114,8 +137,8 @@ header ul
 .fa-map-marker-alt
 {
     background: #F2F2F2;
-    font-size: 0.9em;
-    padding: 10.5px 13px 10.2px 13px;
+    font-size: 1.3em;
+    padding: 11px 13px 11.5px 13px;
     margin-right: -5px;
     border-radius: 10px 0px 0px 10px;
 }
@@ -126,7 +149,9 @@ header ul
 #localisation
 {
     border: solid 0.5px #F2F2F2;
-    padding: 7px 7px 7.3px 7px;
+    padding: 9px 8px 8px 8px;
+    font-size: 1.3em;
+    width: 180px;
 }
 #localisation:focus
 {
@@ -137,10 +162,11 @@ header ul
 {
     color: white;
     background-color: #0065FC;
-    padding: 8px 12px 8px 12px;
+    padding: 10px 15px 8.5px 15px;
     margin-left: -3px;
     border-radius: 0px 10px 10px 0px;
     border: none;
+    font-size: 1.3em;
 }
 #rechercher:hover
 {
@@ -149,22 +175,31 @@ header ul
 /*responsive mobile*/
 @media all and (max-width: 667px)
 {
+#section_recherche
+{
+    margin-left: 15px;
+}
 #rechercher
 {
     display:none;
+}
+#section_recherche
+{
+    margin-top: 60px;
 }
 .fa-search
 {
     display: initial;
     background-color: #0065FC;
-    padding: 9px 9px 9px 9px;
+    padding: 10px 12px 11px 12px;
     border-radius: 10px;
     margin-left: -10px;
     color: white;
+    font-size: 1.3em;
 }
 #filtre_localisation
 {
-    justify-content: center;
+    justify-content: flex-start;
     width: 90%
 }
 }
@@ -173,8 +208,8 @@ header ul
 {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     align-items: center;
     justify-content: flex-start;
 }
@@ -240,7 +275,6 @@ header ul
 #section_hebergements
 {
     display: flex;
-    margin-left: 20px;
 }
 #section_hebergements h2
 {
@@ -274,6 +308,7 @@ aside
 #section_hebergements
 {
     flex-direction: column-reverse;
+    margin: 0;
 }
 }
 /*cartes d'hébergements pricipaux*/
@@ -309,7 +344,7 @@ aside
 }
 .infocarte_hebergement img
 {
-    height: 85px;
+    height: 90px;
     width: 170px;
     border-radius: 15px 15px 0px 0px;
 }
@@ -350,25 +385,25 @@ aside
 /*responsive mobile*/
 @media all and (max-width: 667px)
 {
-#section_hebergements
-{
-    margin: 0;
-}
 #cartes_hebergements
 {
     background-color: unset;
     border-radius: 0;
     margin: 0;
-    padding: 10px;
+    padding: 15px;
+    width: 100%;
 } 
 #cartes
 {
+    flex-direction: column;
     align-items: center;
     margin: 0;
+    width: 100%;
 }
 .infocarte_hebergement
 {
     width: 100%;
+    height: 150px;
 }
 .infocarte_hebergement img
 {
@@ -384,7 +419,6 @@ aside
     background-color: #F2F2F2;
     padding: 15px;
     border-radius: 15px;
-    margin-right: 25px;
 }
 #titre_aside
 {
@@ -401,7 +435,6 @@ aside
 .infocarte_aside
 {
     display: flex;
-    align-items: center;
     background-color: white;
     border-radius: 15px;
     padding: 3px;
@@ -439,7 +472,7 @@ aside
 .textcarte_aside h3
 {
     font-weight: 600;
-    padding: 2px 0px 4px 0px;
+    padding: 5px 0px 4px 0px;
 }
 .textcarte_aside p
 {
@@ -454,13 +487,26 @@ aside
     width: 100%;
     margin: 0;
 }
+.infocarte_aside
+{
+    height: 120px;
+}
+.infocarte_aside img
+{
+    height: 120px;
+    width: 120px;
+}
+.textcarte_aside
+{
+    margin-top: 10px;
+}
 }
 /*section activités*/
 #section_activites
 {
     display: flex;
     flex-direction: column;
-    margin: 30px 0px 30px 20px;
+    margin: 30px 0px 30px 0px;
 }
 #section_activites h2
 {
@@ -471,7 +517,6 @@ aside
 #cartes_activites
 {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
 }
 #cartes_activites a
@@ -539,24 +584,23 @@ aside
 #cartes_activites
 {
     flex-direction: column;
-    align-content:center;
+    align-content: center;
+    width: 100%;
+}
+.activite
+{
+    margin: 5px 15px;
+    height: 130px;
+    width: 100%;
 }
 .activite.vieux_port img, .activite.parc_calanques img, .activite.fort_pomegues img, .activite.iles_frioul img, .activite.la_garde img, .activite.parc_longchamp img
 {
     height: 90px;
     width: 100%;
 }
-.activite.vieux_port, .activite.parc_calanques, .activite.fort_pomegues, .activite.iles_frioul, .activite.la_garde, .activite.parc_longchamp
-{
-    width: 100%;
-}
-#section_activites
-{
-    margin: 0;
-}
 #section_activites h2 
 {
-    margin-left: 20px;
+    padding-left: 10px;
 }
 }
 /*footer*/
