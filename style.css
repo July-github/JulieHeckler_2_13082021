@@ -180,23 +180,9 @@ header img
 /*responsive tablette & mobile*/
 @media all and (max-width: 1024px)
 {
-#rechercher
-{
-    display:none;
-}
 #section_recherche
 {
     margin-top: 0;
-}
-.fa-search
-{
-    display: initial;
-    background-color: #0065FC;
-    padding: 10px 12px 11px 12px;
-    border-radius: 10px;
-    margin-left: -10px;
-    color: white;
-    font-size: 1.3em;
 }
 #filtre_localisation
 {
@@ -227,6 +213,20 @@ header img
 {
     font-size: 1.5em;
 }
+#rechercher
+{
+    display:none;
+}
+.fa-search
+{
+    display: initial;
+    background-color: #0065FC;
+    padding: 10px 12px 11px 12px;
+    border-radius: 10px;
+    margin-left: -10px;
+    color: white;
+    font-size: 1.3em;
+}
 }
 /*filtres pré-enregistrés*/
 #filtres
@@ -249,6 +249,7 @@ header img
     justify-content: left;
     margin-bottom: 15px;
     margin-right: 40px;
+    padding-top: 15px;
     position: relative;
 }
 .pre_filtre a
@@ -270,7 +271,7 @@ header img
 .fa-money-bill-wave, .fa-child, .fa-heart, .fa-dog
 {
     position: absolute;
-    top: -10px;
+    top: 5px;
     margin: 0;
     background-color: #DEEBFF;
     padding: 11px;
@@ -299,10 +300,6 @@ header img
 /*responsive tablette & mobile*/
 @media all and (max-width: 1024px)
 {
-.pre_filtre
-{
-    margin-top: 15px;
-}
 .fa-money-bill-wave, .fa-child, .fa-heart, .fa-dog
 {
     padding: 12px;
