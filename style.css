@@ -7,7 +7,7 @@ body
 #bloc_page
 {
     margin: 0 auto;
-    max-width: 1200px;
+    max-width: 1190px;
 }
 /*responsive mobile*/
 @media all and (max-width: 667px)
