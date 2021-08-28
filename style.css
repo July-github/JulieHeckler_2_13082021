@@ -221,11 +221,19 @@ header img
 {
     display: initial;
     background-color: #0065FC;
-    padding: 10px 12px 11px 12px;
+    padding: 11px 12px 11px 12px;
     border-radius: 10px;
-    margin-left: -10px;
+    margin-left: -12px;
     color: white;
     font-size: 1.3em;
+}
+.fa-map-marker-alt
+{
+    margin-right: -6px;
+}
+#localisation
+{
+    font-size: 1.1em;
 }
 }
 /*filtres pré-enregistrés*/
