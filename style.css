@@ -221,7 +221,7 @@ header img
 {
     display: initial;
     background-color: #0065FC;
-    padding: 11px 12px 11px 12px;
+    padding: 11px 12px 12px 12px;
     border-radius: 10px;
     margin-left: -12px;
     color: white;
@@ -234,6 +234,7 @@ header img
 #localisation
 {
     font-size: 1.1em;
+    padding: 11.5px 10px 9px 15px;
 }
 }
 /*filtres pré-enregistrés*/
@@ -274,7 +275,8 @@ header img
 .pre_filtre a:hover
 {
     background-color: #DEEBFF;
-    border: #DEEBFF solid 2px;
+    border:none;
+    padding: 9.5px 13px 10px 45px;
 }
 .fa-money-bill-wave, .fa-child, .fa-heart, .fa-dog
 {
@@ -680,7 +682,7 @@ aside
 .infocarte_aside a 
 {
     height: 150px;
-    width: 100%%;
+    width: 100%;
 }
 .textcarte_aside h2
 {
