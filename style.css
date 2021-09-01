@@ -2,7 +2,8 @@
 body
 {
     font-family: 'Raleway', sans-serif;
-    margin: 0;
+    margin: 0 auto;
+    width: 100%;
 }
 #bloc_page
 {
@@ -62,6 +63,10 @@ header a
     border-top: solid 1px #0065FC;
     color: #0065FC;
 }
+.lien_menu:visited
+{
+    color: #0065FC;
+}
 #inscription
 {
     display: flex;
@@ -73,6 +78,10 @@ header a
 #inscription:hover
 {
     font-weight: 800;
+}
+#inscription:visited
+{
+    color: #0065FC;
 }
 /*responsive mobile*/
 @media all and (max-width: 667px)
@@ -137,7 +146,8 @@ header img
 #filtre_localisation
 {
     display:flex;
-    justify-content: center;
+    justify-content: flex-start;
+    margin-left: 15px;
 }
 .fa-map-marker-alt
 {
@@ -184,15 +194,6 @@ header img
 {
     margin-top: 0;
 }
-#filtre_localisation
-{
-    justify-content: center;
-    width: 100%
-}
-#titre_recherche
-{
-    text-align: center;
-}
 #section_recherche h1
 {
     font-size: 1.4em;
@@ -208,6 +209,15 @@ header img
 #section_recherche
 {
     margin-top: 60px;
+}
+#filtre_localisation
+{
+    justify-content: center;
+    width: auto;
+}
+#titre_recherche
+{
+    text-align: center;
 }
 #section_recherche h1
 {
@@ -251,6 +261,11 @@ header img
 {
     font-weight: 600;
     margin-right: 20px;
+}
+#pre_filtre
+{
+    display: flex;
+    flex-wrap: wrap;
 }
 .pre_filtre
 {
@@ -314,10 +329,6 @@ header img
 {
     padding: 12px;
 }
-#filtres
-{
-    justify-content: center;
-}
 }
 /*section hébergements*/
 #section_hebergements
@@ -329,7 +340,7 @@ header img
 {
     font-size: 1em;
     font-weight: 600;
-    margin: 5px 0px 10px 10px;
+    margin: 5px 0px 10px 15px;
 }
 #cartes_hebergements
 {
@@ -363,6 +374,7 @@ aside
 #section_hebergements h2 
 {
     font-size: 1.3em;
+    margin-left: 10px;;
 }
 }
 /*cartes d'hébergements pricipaux*/
@@ -370,15 +382,16 @@ aside
 {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     background-color: #F2F2F2;
-    padding: 15px;
     border-radius: 15px;
     margin-right: 25px;
+    padding: 20px;
 }
 #cartes
 {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-content: center;
     flex-wrap: wrap;
     margin-bottom: 20px;
@@ -388,9 +401,11 @@ aside
     background-color: white;
     border-radius: 15px;
     padding: 3px;
-    margin: 5px;
+    margin: 15px;
     box-shadow: 3px 0px 10px #d3d2d2;
     cursor: pointer;
+    height: 140px;
+    width: 190px;
 }
 .infocarte_hebergement:hover
 {
@@ -398,9 +413,10 @@ aside
 }
 .infocarte_hebergement img
 {
-    height: 90px;
-    width: 170px;
+    height: 60%;
+    width: 100%;
     border-radius: 15px 15px 0px 0px;
+    object-fit: cover;
 }
 .infocarte_hebergement a
 {
@@ -411,8 +427,8 @@ aside
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 55px;
-    padding: 0px 0px 0px 10px;
+    height: 40px;
+    padding: 0px 0px 5px 10px;
     color: black;
     font-size: 0.6em;
 }
@@ -431,27 +447,33 @@ aside
     color: black;
     font-size: 0.8em;
     font-weight: 600;
-    margin: 0px 0px 0px 10px;
+    margin: 0px 0px 0px 20px;
 }
 #cartes_hebergements span a:hover
 {
     color: #0065FC;
 }
 /*responsive tablette*/
-@media all and (min-width: 812px) and (max-width: 1024px)
+@media all and (min-width: 768px) and (max-width: 1095px)
 {
-#cartes
+#cartes_hebergements
 {
-    justify-content: space-around;
+    padding: 20px 0px;
 }
-.infocarte_hebergement img 
+.infocarte_hebergement
 {
-    height: 100px;
-    width: 185px;
-    object-fit: cover;
+    height: 140px;
+    width: 170px;
 }
 }
-@media all and (min-width: 667px) and (max-width: 812px)  
+@media all and (max-width: 768px)
+{
+#cartes_hebergements
+{
+    flex: 1.8;
+}
+}
+@media all and (min-width: 667px) and (max-width: 768px)  
 {
 #cartes
 {
@@ -467,12 +489,6 @@ aside
 {
     display:none;
 }
-.infocarte_hebergement img
-{
-    height: 110px;
-    width: 100%;
-    object-fit: cover;
-}
 }
 /*responsive mobile*/
 @media all and (max-width: 667px)
@@ -482,7 +498,7 @@ aside
     background-color: unset;
     border-radius: 0;
     margin: 0;
-    padding: 25px;
+    padding: 10px 25px 10px 25px;
     width: auto;
 } 
 #cartes
@@ -511,6 +527,7 @@ aside
 .textcarte_hebergement
 {
     font-size: 0.8em;
+
 }
 #cartes_hebergements span a
 {
@@ -523,7 +540,7 @@ aside
     display: flex;
     flex-direction: column;
     background-color: #F2F2F2;
-    padding: 10px;
+    padding: 20px 20px;
     border-radius: 15px;
 }
 #titre_aside
@@ -531,7 +548,7 @@ aside
     display: flex;
     justify-content: space-between;
     flex: 1;
-    padding-top: 5px;
+    padding: 0px;
 }
 #cartes_aside
 {
@@ -548,15 +565,15 @@ aside
 .infocarte_aside a
 {
     display: flex;
-    height: 90px;
     background-color: white;
     border-radius: 15px;
     padding: 3px;
-    margin: 5px;
+    margin: 10px;
     color: black;
     font-size: 0.6em;
     box-shadow: 3px 0px 10px #d3d2d2;
     cursor: pointer;
+    height: 110px;
 }
 .infocarte_aside a:hover
 {
@@ -564,9 +581,9 @@ aside
 }
 .infocarte_aside img
 {
-    height: 99.5%;
+    height: 108px;
     vertical-align: middle;
-    width: 90px;
+    width: 40%;
     border-radius: 15px 0px 0px 15px;
     object-fit: cover;
 }
@@ -591,72 +608,53 @@ aside
     padding-bottom: 15px;
 }
 /*responsive tablette & mobile*/
-@media all and (min-width: 812px) and (max-width: 1024px)
+@media all and (min-width: 768px) and (max-width: 1095px)
 {
+#cartes_hebergements
+{
+    flex: 1.8;
+}
 aside
 {
     width: auto;
     margin: 0;
-    padding: 20px;
+    padding: 15px;
 }
 #cartes_aside
 {
     flex: 10;
-}
-.infocarte_aside a 
-{
-    height: 130px;
-    width: 95%;
-    margin-top: 10px;
-}
-.infocarte_aside img
-{
-    height: 130px;
-    width: 130px;
-}
-.textcarte_aside
-{
-    margin-top: 5px;
-    height: 90%;
-}
-.textcarte_aside p
-{
-    padding-bottom: 0px;
+    justify-content: space-around;
 }
 }
 /*responsive mobile*/
-@media all and (min-width: 667px) and (max-width: 812px)
+@media all and (min-width: 667px) and (max-width: 768px)
 {
-aside 
+aside
 {
-    width: auto;
-    margin: 0;
-    padding: 20px;
+    padding-bottom: 15px;
 }
 #cartes_aside
 {
     flex: 18;
-    justify-content: space-between;
-    width: 100%;
-}
-#titre_aside
-{
-    padding-top: 0;
 }
 .infocarte_aside a
 {
     display: flex;
     flex-direction: column;
-    height: 170px;
-    width: 100%;
+    height: 165px;
+    width: auto;
 }
 .infocarte_aside img
 {
-    height: 100px;
+    height: 60%;
     width: 100%;
     border-radius: 15px 15px 0px 0px;
 }
-.textcarte_aside p 
+.textcarte_aside
+{
+    justify-content: center;
+}
+.textcarte_aside p
 {
     padding-bottom: 0px;
 }
@@ -668,21 +666,24 @@ aside
     border-radius: 0;
     width: auto;
     margin: 0;
-    padding: 20px;
+    padding: 12px;
 }
 #cartes_aside
 {
     align-content: center;
 }
+.infocarte_aside
+{
+    width: 100%;
+}
 .infocarte_aside img
 {
-    height: 150px;
-    width: 200px;
+    height: 170px;
+    width: 220px;
 }
 .infocarte_aside a 
 {
-    height: 150px;
-    width: 100%;
+    height: 170px;
 }
 .textcarte_aside h2
 {
@@ -722,14 +723,15 @@ aside
 {
     font-size: 1em;
     font-weight: 600;
-    margin: 5px 0px 10px 5px;
-    padding-left: 20px;
+    margin: 5px 0px 10px 15px;
+    padding-left: 10px;
 }
 #cartes_activites
 {
     display: flex;
     justify-content: space-between;
-    padding: 0 20px;
+    padding: 0;
+    margin: 0px 25px;
 }
 #cartes_activites a
 {
@@ -812,7 +814,7 @@ aside
 }
 #section_activites h2 
 {
-    padding-left: 30px;
+    padding-left: 10px;
 }
 #section_activites
 {
@@ -830,13 +832,12 @@ aside
 {
     flex-direction: column;
     align-content: center;
-    padding: 0 25px;
     width: auto;
     flex-wrap: nowrap;
 }
 .activite
 {
-    margin: 10px 0px 10px 0px;
+    margin: 15px 0px 15px 0px;
     height: 150px;
     width: 100%;
 }
@@ -848,6 +849,7 @@ aside
 #section_activites h2 
 {
     font-size: 1.3em;
+    padding-left: 25px;
 }
 #cartes_activites h3 
 {
@@ -857,12 +859,15 @@ aside
 /*footer*/
 footer
 {
+    background-color: #F2F2F2;
+}
+#width_footer
+{
+    max-width: 1190px;
     display: flex;
     justify-content: space-between;
-    margin-top: 30px;
-    padding-left: 50px;
-    padding-top: 15px;
-    background-color: #F2F2F2;
+    margin: 30px auto 0px auto; 
+    padding: 15px 0px 20px 25px;
     font-size: 0.6em;
 }
 footer a
@@ -894,13 +899,15 @@ footer span
 /*responsive mobile*/
 @media all and (max-width: 667px)
 {
-footer
+#width_footer
 {
     flex-direction: column;
-    font-size: 0.8em;
+    justify-content: space-between;
+    padding: 30px 0px 0px 30px;
+    font-size: 1em;
 }
 .footer
 {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 }
