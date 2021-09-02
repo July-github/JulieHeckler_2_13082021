@@ -147,7 +147,7 @@ header img
 {
     display:flex;
     justify-content: flex-start;
-    margin-left: 15px;
+    margin-left: 20px;
 }
 .fa-map-marker-alt
 {
@@ -310,7 +310,7 @@ header img
 #search_info
 {
     display: flex;
-    margin: 10px 0px 10px 25px;
+    margin: 10px 0px 20px 20px;
 }
 .fa-info-circle
 {
@@ -335,12 +335,13 @@ header img
 {
     display: flex;
     margin-bottom: 30px;
+    margin-left: 20px;
 }
 #section_hebergements h2
 {
     font-size: 1em;
     font-weight: 600;
-    margin: 5px 0px 10px 15px;
+    margin: 0px 0px 0px 15px;
 }
 #cartes_hebergements
 {
@@ -374,7 +375,7 @@ aside
 #section_hebergements h2 
 {
     font-size: 1.3em;
-    margin-left: 10px;;
+    margin-left: 0;
 }
 }
 /*cartes d'hébergements pricipaux*/
@@ -391,10 +392,9 @@ aside
 #cartes
 {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-content: center;
     flex-wrap: wrap;
-    margin-bottom: 20px;
 }
 .infocarte_hebergement
 {
@@ -454,7 +454,7 @@ aside
     color: #0065FC;
 }
 /*responsive tablette*/
-@media all and (min-width: 768px) and (max-width: 1095px)
+@media all and (min-width: 768px) and (max-width: 1124px)
 {
 #cartes_hebergements
 {
@@ -542,6 +542,7 @@ aside
     background-color: #F2F2F2;
     padding: 20px 20px;
     border-radius: 15px;
+    margin-right: 20px;
 }
 #titre_aside
 {
@@ -618,7 +619,6 @@ aside
 {
     width: auto;
     margin: 0;
-    padding: 15px;
 }
 #cartes_aside
 {
@@ -689,6 +689,10 @@ aside
 {
     font-size: 1.3em;
 }
+#titre_aside
+{
+    padding-left: 13px;
+}
 .textcarte_aside h3 
 {
     padding-top: 5px;
@@ -731,7 +735,7 @@ aside
     display: flex;
     justify-content: space-between;
     padding: 0;
-    margin: 0px 25px;
+    margin: 0px 20px;
 }
 #cartes_activites a
 {
@@ -849,7 +853,7 @@ aside
 #section_activites h2 
 {
     font-size: 1.3em;
-    padding-left: 25px;
+    padding-left: 10px;
 }
 #cartes_activites h3 
 {
@@ -888,9 +892,10 @@ footer ul
     list-style-type: none;
     margin: 5px 0px 10px -40px;
 }
-footer span
+.footer_titre
 {
     font-weight: 700;
+    padding-bottom: 8px;
 }
 .footer
 {
